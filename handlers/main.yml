@@ -1,0 +1,6 @@
+---
+- name: Trigger udevadm
+  become: True
+  ansible.builtin.command:
+    cmd: "udevadm trigger"
+
