@@ -8,3 +8,9 @@
       ansible.builtin.apt:
         name: sg3-utils
         state: present
+
+    - name: INSTALL | Ensure udev rule is present
+      become: True
+      ansible.builtin.copy:
+        src: 60-apple-superdrive.rules
+        dest: /etc/udev/rules.d/60-apple-superdrive.rules
