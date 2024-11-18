@@ -2,6 +2,7 @@ apple-superdrive
 ================
 
 Installs dependencies and configures settings for the Apple SuperDrive for the user.
+[Source](https://kuziel.nz/notes/2018/02/apple-superdrive-linux.html)
 
 Requirements
 ------------
