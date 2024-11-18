@@ -1,0 +1,10 @@
+---
+- name: INSTALL | apple-superdrive
+  tags:
+    - install
+  block:
+    - name: INSTALL | Ensure sg3-utils is installed
+      become: True
+      ansible.builtin.apt:
+        name: sg3-utils
+        state: present
