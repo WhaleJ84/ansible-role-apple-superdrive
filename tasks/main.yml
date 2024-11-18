@@ -11,6 +11,7 @@
 
     - name: INSTALL | Ensure udev rule is present
       become: True
+      notify: Trigger udevadm
       ansible.builtin.copy:
         src: 60-apple-superdrive.rules
         dest: /etc/udev/rules.d/60-apple-superdrive.rules
